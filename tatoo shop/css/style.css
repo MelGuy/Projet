@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, li{
+    list-style: none;
+    padding: 0;    
+}
+
+header{
+    background: url(../img/header.jpg) no-repeat fixed;
+    background-size: cover;
+}
+header li{
+    padding: 2em;
+}
+/* header ul, footer ul{
+    padding: 0;
+} */
+header li a, h1, h2{
+    font-family: 'Courier New', monospace;
+    font-size: 2rem;
+    color: #34a1a1;
+}
+h3{
+    font-family: 'Courier New', monospace;
+    font-size: 1.8rem;;
+    color: #34a1a1;
+}
+header li:hover, a:hover{
+    background-color: black;
+    color: #34a1a1;
+    /* padding: 1em; */
+    text-decoration: none;
+}
+header img{
+    padding: 5em;
+}
+#menu ul{
+    margin-bottom: 0;
+}
+
+/******body */
+body{
+    margin : auto;
+    text-align: center;
+    font-size: 1.6em;
+    background-color: #2c2c2c;
+    color: #b1b1b1;
+}
+
+section{
+    margin-bottom: 1em;
+}
+#shop p{
+    margin: 1em;
+}
+#shop img{
+    width: 100%;
+}
+#equipe li img{
+    border-radius: 5em;
+    width: 11em;
+    margin: 1em;
+}
+#equipe p{
+    padding: 1em;
+}
+.show, input[type='submit']{
+    border: solid #b1b1b1;
+    background-color: #2c2c2c;
+    color: #34a1a1;
+}
+button:hover, input[type='submit']:hover{
+    background-color: black;   
+    padding: 1rem;
+}
+.hide img{
+    width: 25%;
+    margin: 1em;
+}
+.hide{
+    display: none;
+    border: solid 1em black;
+    margin: 0;
+}
+i{
+    color: white;
+}
+section{
+    margin-top: 3.5em;
+}
+#message{
+    display: block;
+}
+textarea{
+    margin: auto;
+}
+footer{
+    background-color: black;
+    margin: 0;
+}
+footer p{
+    margin: 0;
+}
+#equipe img:hover{
+	animation: bounce 0.35s ease infinite alternate;
+}
+@keyframes bounce{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-20px);}
+}
+
+.alert{
+    color: rgb(250, 249, 249);
+    padding: 0.5em;
+    background-color: red;
+}
+@media screen and (min-width:768px){
+    .description{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #shop img{
+        width: 350px;
+    }
+    .img1{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1200px){
+
+    .img1{
+        display: block;
+    }
+    #menu, #equipe ul, .description, footer ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #equipe ul>li>ul{
+        display: block;
+    }
+    #shop img{
+        width: 25%;
+    }
+    .hide img{
+        max-width: 150px;
+    }
+}
+
